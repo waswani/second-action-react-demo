@@ -1,7 +1,7 @@
 name: Output Information
 on: workflow_dispatch
 jobs:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     -   name: Output Github Context
         run: echo ${{ toJSON(github) }}
